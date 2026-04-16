@@ -1,46 +1,47 @@
-# AI-Based Resume Screening System
+# 📄 AI Resume Screening System
 
-##  Objective
-The objective of this project is to develop an AI-based system that analyzes resumes and compares them with a given job description. The system extracts key skills from the resume, matches them with required job skills, calculates a matching score, and provides an explanation based on the level of match.
+An AI-powered web application that evaluates how well a candidate’s resume matches a given job description.
 
-This system helps automate the resume screening process, reducing manual effort and improving efficiency using basic Natural Language Processing techniques.
+## 🚀 Features
+- Extracts key skills from resume text
+- Matches resume skills with job requirements
+- Calculates a matching score (0–100)
+- Generates a short explanation for the score
+- Simple and interactive UI using Streamlit
 
-##  Features
-- Extracts skills from resume text  
-- Matches resume skills with job description  
-- Calculates matching score (0–100)  
-- Generates explanation based on match level  
-- Handles multiple candidate resumes
-- 
-##  Technologies Used
-- Python  
-- Hugging Face Transformers  
-- Basic NLP (string processing)  
-- Jupyter Notebook  
+## 🛠️ Tech Stack
+- Python
+- Streamlit (UI)
+- Transformers (Hugging Face)
+- Basic NLP (skill matching logic)
 
+## 📊 How It Works
+1. User pastes resume and job description
+2. System extracts relevant skills
+3. Compares with predefined job skills
+4. Calculates a matching score
+5. Generates explanation using a language model
 
-##  How It Works
-1. Resume data is provided as input  
-2. Key information (skills, experience, tools) is extracted  
-3. Skills are compared with job requirements  
-4. Matching score is calculated  
-5. Explanation is generated based on score  
+## ▶️ How to Run
 
+```bash
+pip install streamlit transformers
+python -m streamlit run app.py
 
-##  Sample Output
-Matching Score: 100.0
-Explanation: Candidate perfectly matches all required skills.
+📸 Demo
+<img width="1066" height="777" alt="UI 1" src="https://github.com/user-attachments/assets/6458997d-b0b8-4023-9e33-d16a8327f405" />
 
-
-## 🔮 Future Improvements
-- Use advanced LLMs for better semantic matching  
-- Add GUI interface for user interaction  
-- Upload and parse real PDF resumes  
-- Improve skill extraction using NLP models  
-
-## 📁 Project Structure
-- `AI_Resume_Screening.ipynb` → Main notebook file  
+<img width="887" height="423" alt="UI 2" src="https://github.com/user-attachments/assets/65093084-d9f2-402c-bf5f-94524b235143" />
 
 
-## ✅ Conclusion
-This project demonstrates how AI and basic NLP techniques can be used to automate resume screening efficiently and accurately.
+⚠️ Note
+This project uses a lightweight local model (distilgpt2) for text generation.
+Explanation quality may be basic.
+Can be improved using advanced instruction-tuned models.
+🔮 Future Improvements
+Upload resume as PDF
+Better AI model for explanation
+Automatic skill extraction using NLP
+Improved UI/UX
+👩‍💻 Author
+Mayuri Rathod.
